@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JM Web Studio — Websites die klanten opleveren</title>
+  <meta name="description"
+    content="Moderne websites en webapps voor ondernemers. Snel, strak en conversiegericht. Vraag een gratis offerte aan." />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JM Web Studio — Websites die klanten opleveren" />
+  <meta property="og:description"
+    content="Moderne websites en webapps voor ondernemers. Snel, strak en conversiegericht." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Ga naar content</a>
+
+  <!-- Top bar -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Ga naar boven">
+        <span class="logo__mark">JM</span>
+        <span class="logo__text">Web Studio</span>
+      </a>
+
+      <nav class="nav" aria-label="Hoofdmenu">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#services">Diensten</a></li>
+          <li><a href="#work">Werk</a></li>
+          <li><a href="#pricing">Prijzen</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--small" href="#contact">Gratis offerte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge">
+            <span class="dot"></span>
+            Snelle websites • Modern design • Meer leads
+          </div>
+          <h1>Websites die <span class="gradient">klanten opleveren</span>, niet alleen mooi zijn.</h1>
+          <p class="lead">
+            Ik maak snelle, moderne websites en webapps voor ondernemers.
+            Inclusief SEO basics, mobiel design en duidelijke call-to-actions.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contact">Vraag gratis offerte aan</a>
+            <a class="btn btn--ghost" href="#work">Bekijk werk</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <strong>⚡ Snel</strong>
+              <span>Core Web Vitals ready</span>
+            </div>
+            <div class="trust__item">
+              <strong>📱 Mobile-first</strong>
+              <span>Perfect op telefoon</span>
+            </div>
+            <div class="trust__item">
+              <strong>🎯 Conversie</strong>
+              <span>Meer aanvragen</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="mock">
+            <div class="mock__top">
+              <span class="mock__dot"></span><span class="mock__dot"></span><span class="mock__dot"></span>
+              <span class="mock__url">jmwebstudio.nl</span>
+            </div>
+            <div class="mock__body">
+              <div class="mock__kpi">
+                <div>
+                  <p class="kpi__label">Nieuwe aanvragen</p>
+                  <p class="kpi__value">+38%</p>
+                </div>
+                <div class="pill">Live</div>
+              </div>
+
+              <div class="mock__list">
+                <div class="mock__row">
+                  <span class="tag">SEO</span>
+                  <span class="muted">Beter vindbaar</span>
+                </div>
+                <div class="mock__row">
+                  <span class="tag">Speed</span>
+                  <span class="muted">Sneller laden</span>
+                </div>
+                <div class="mock__row">
+                  <span class="tag">Design</span>
+                  <span class="muted">Premium uitstraling</span>
+                </div>
+              </div>
+
+              <div class="mock__chart" aria-hidden="true"></div>
+
+              <div class="mock__buttons">
+                <div class="miniBtn"></div>
+                <div class="miniBtn miniBtn--ghost"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__mini">
+            <div class="miniCard">
+              <p class="miniCard__title">Gemiddelde oplevering</p>
+              <p class="miniCard__big">7–14 dagen</p>
+            </div>
+            <div class="miniCard">
+              <p class="miniCard__title">Support</p>
+              <p class="miniCard__big">Snel via WhatsApp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Logos / Social proof -->
+    <section class="section section--tight">
+      <div class="container">
+        <p class="section__eyebrow muted center">Ideaal voor</p>
+        <div class="chips">
+          <span class="chip">Kappers</span>
+          <span class="chip">Coaches</span>
+          <span class="chip">Horeca</span>
+          <span class="chip">ZZP’ers</span>
+          <span class="chip">Startups</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Diensten</h2>
+          <p class="muted">Kies wat je nodig hebt. Ik denk mee en lever netjes op.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Website (1–5 pagina’s)</h3>
+            <p class="muted">Perfect voor ondernemers die professioneel online willen staan.</p>
+            <ul class="list">
+              <li>Modern design</li>
+              <li>Mobiel geoptimaliseerd</li>
+              <li>Contact + WhatsApp knop</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Landingspagina (ads)</h3>
+            <p class="muted">Voor Google/Instagram Ads zodat je meer leads pakt.</p>
+            <ul class="list">
+              <li>Conversiegericht</li>
+              <li>Snelle laadtijd</li>
+              <li>Duidelijke CTA’s</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Webapp / systeem</h3>
+            <p class="muted">Iets zoals een klantportaal, dashboard of reserveringssysteem.</p>
+            <ul class="list">
+              <li>Maatwerk</li>
+              <li>Login & database</li>
+              <li>Uitbreidbaar</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2>Voorbeeld werk</h2>
+          <p class="muted">Zet hier straks jouw echte projecten. Nu staan er demo-cases.</p>
+        </div>
+
+        <div class="grid2">
+          <a class="card card--work" href="portfolio/barberpro/index.html">
+            <div class="work__meta">
+              <span class="pill">Website</span>
+              <span class="muted">Kapper • Rotterdam</span>
+            </div>
+            <h3>BarberPro</h3>
+            <p class="muted">Nieuwe site + afspraak knop → meer boekingen.</p>
+            <div class="work__stats">
+              <span class="stat">⚡ 95+ speed</span>
+              <span class="stat">🎯 +20% leads</span>
+            </div>
+          </a>
+
+
+          <a class="card card--work" href="portfolio/fitfocus/index.html">
+            <div class="work__meta">
+              <span class="pill">Landing</span>
+              <span class="muted">Coach</span>
+            </div>
+            <h3>FitFocus</h3>
+            <p class="muted">Ad-landing met formulier → meer aanvragen per euro.</p>
+            <div class="work__stats">
+              <span class="stat">📱 Mobile-first</span>
+              <span class="stat">✅ Formspree</span>
+            </div>
+          </a>
+
+          <a class="card card--work" href="portfolio/quoteflow/index.html">
+            <div class="work__meta">
+              <span class="pill">Webapp</span>
+              <span class="muted">ZZP</span>
+            </div>
+            <h3>QuoteFlow</h3>
+            <p class="muted">Offertesysteem + klantoverzicht (dashboard).</p>
+            <div class="work__stats">
+              <span class="stat">🔐 Login</span>
+              <span class="stat">🧩 Uitbreidbaar</span>
+            </div>
+          </a>
+
+          <a class="card card--work" href="portfolio/tastehub/index.html">
+            <div class="work__meta">
+              <span class="pill">Website</span>
+              <span class="muted">Restaurant</span>
+            </div>
+            <h3>TasteHub</h3>
+            <p class="muted">Menu + reserveren + Google vindbaarheid basis.</p>
+            <div class="work__stats">
+              <span class="stat">🗺️ Local SEO</span>
+              <span class="stat">📞 Call buttons</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <h2>Prijzen</h2>
+          <p class="muted">Instapvriendelijk om te starten. Exacte prijs = na intake.</p>
+        </div>
+
+        <!-- Project prijzen -->
+        <div class="pricing">
+          <article class="priceCard">
+            <h3>Starter</h3>
+            <p class="price">€349 <span class="muted">vanaf</span></p>
+            <p class="muted">Perfect voor een sterke 1-pagina landing.</p>
+            <ul class="list">
+              <li>1 pagina (landing)</li>
+              <li>Contact + WhatsApp knop</li>
+              <li>Basis SEO (title/meta/structuur)</li>
+              <li>Mobiel geoptimaliseerd</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Offerte aanvragen</a>
+          </article>
+
+          <article class="priceCard priceCard--featured">
+            <div class="ribbon">Meest gekozen</div>
+            <h3>Business</h3>
+            <p class="price">€599 <span class="muted">vanaf</span></p>
+            <p class="muted">Voor bedrijven die professioneel online willen staan.</p>
+            <ul class="list">
+              <li>Tot 5 pagina’s</li>
+              <li>Portfolio/Reviews sectie</li>
+              <li>Snelle performance</li>
+              <li>Conversiegericht (CTA’s)</li>
+            </ul>
+            <a class="btn" href="#contact">Gratis intake</a>
+          </article>
+
+          <article class="priceCard">
+            <h3>Pro (Maatwerk)</h3>
+            <p class="price">€999+ <span class="muted">vanaf</span></p>
+            <p class="muted">Voor webapps of speciale features (login, dashboard, etc.).</p>
+            <ul class="list">
+              <li>Maatwerk (Laravel/JS)</li>
+              <li>Database (optioneel)</li>
+              <li>Uitbreidbaar</li>
+              <li>Advies & plan</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Plan een call</a>
+          </article>
+        </div>
+
+        <p class="muted center small">
+          * Prijzen zijn “vanaf”. Hosting/domein en onderhoud zijn apart (onderaan).
+        </p>
+
+        <!-- Onderhoud pakketten -->
+        <div class="section__head maintenanceHead">
+          <h2>Onderhoud</h2>
+          <p class="muted">Maandelijks voor updates, kleine wijzigingen en zekerheid.</p>
+        </div>
+
+        <div class="pricing pricing--maintenance">
+          <article class="priceCard">
+            <h3>Basic</h3>
+            <p class="price">€25 <span class="muted">/ maand</span></p>
+            <p class="muted">Voor kleine sites die alleen “online” moeten blijven.</p>
+            <ul class="list">
+              <li>Hosting + SSL</li>
+              <li>Back-up (maandelijks)</li>
+              <li>1 kleine wijziging p/m*</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Neem Basic</a>
+          </article>
+
+          <article class="priceCard priceCard--featured">
+            <div class="ribbon">Meest gekozen</div>
+            <h3>Care</h3>
+            <p class="price">€49 <span class="muted">/ maand</span></p>
+            <p class="muted">De beste optie voor ondernemers (meeste waarde).</p>
+            <ul class="list">
+              <li>Alles van Basic</li>
+              <li>Back-up (wekelijks)</li>
+              <li>Tot 45 min wijzigingen p/m*</li>
+              <li>Uptime check</li>
+            </ul>
+            <a class="btn" href="#contact">Neem Care</a>
+          </article>
+
+          <article class="priceCard">
+            <h3>Growth</h3>
+            <p class="price">€149 <span class="muted">/ maand</span></p>
+            <p class="muted">Voor bedrijven die maandelijks willen verbeteren.</p>
+            <ul class="list">
+              <li>Alles van Care</li>
+              <li>Tot 2 uur wijzigingen p/m*</li>
+              <li>Kleine optimalisaties (CTA/SEO)</li>
+              <li>Maandelijks mini-rapport</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contact">Neem Growth</a>
+          </article>
+        </div>
+
+        <p class="muted center small">
+          * “Wijzigingen” = tekst, foto’s, kleine secties. Grote nieuwe pagina’s/features = offerte.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>Veelgestelde vragen</h2>
+          <p class="muted">Snel antwoord op de belangrijkste dingen.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Hoe snel kun je opleveren?</summary>
+            <p class="muted">Meestal 7–14 dagen, afhankelijk van hoeveel pagina’s en content.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Kan ik later dingen aanpassen?</summary>
+            <p class="muted">Ja. Je kunt onderhoud afspreken of ik maak het zo dat je makkelijk tekst kan wijzigen.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Hoe werkt het contactformulier?</summary>
+            <p class="muted">Het formulier stuurt direct een mail via Formspree (gratis optie). Je hoeft geen backend te
+              hebben.</p>
+          </details>
+
+          <details class="faq__item">
+            <summary>Doen we ook SEO?</summary>
+            <p class="muted">Basis SEO zit standaard erin (titel, meta, snelheid, structuur). Voor advanced SEO kan het
+              ook.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left">
+            <h2>Gratis offerte aanvragen</h2>
+            <p class="muted">
+              Vertel kort wat je nodig hebt. Ik reageer snel met prijsindicatie en planning.
+            </p>
+
+            <div class="contact__cards">
+              <div class="infoCard">
+                <p class="muted small">E-mail</p>
+                <p class="strong">
+                  <a href="mailto:jaydenmuller1907@gmail.com">
+                    jaydenmuller1907@gmail.com
+                  </a>
+                </p>
+
+              </div>
+              <div class="infoCard">
+                <p class="muted small">WhatsApp</p>
+                <p class="strong">
+                  <a href="https://wa.me/31639222600" target="_blank">
+                    +31 6 39222600
+                  </a>
+                </p>
+
+              </div>
+              <div class="infoCard">
+                <p class="muted small">Locatie</p>
+                <p class="strong">Rotterdam / Online</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm" action="https://formspree.io/f/XXXXXXXX" method="POST">
+            <div class="form__row">
+              <label>
+                <span>Naam</span>
+                <input name="name" type="text" placeholder="Jouw naam" required />
+              </label>
+
+              <label>
+                <span>E-mail</span>
+                <input name="email" type="email" placeholder="jij@email.nl" required />
+              </label>
+            </div>
+
+            <label>
+              <span>Waar gaat de website over?</span>
+              <input name="subject" type="text" placeholder="Bijv. barbershop website met afspraken" required />
+            </label>
+
+            <label>
+              <span>Bericht</span>
+              <textarea name="message" rows="5" placeholder="Leg kort uit wat je wilt + deadline + voorbeeldsites"
+                required></textarea>
+            </label>
+
+            <input type="hidden" name="_subject" value="Nieuwe website aanvraag via JM Web Studio" />
+            <button class="btn" type="submit">Versturen</button>
+
+            <p class="muted small" id="formNote">
+              Tip: wil je sneller? Klik op WhatsApp rechts onderin.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted small">© <span id="year"></span> JM Web Studio. Alle rechten voorbehouden.</p>
+        <div class="footer__links">
+          <a href="#services">Diensten</a>
+          <a href="#pricing">Prijzen</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- WhatsApp floating button -->
+  <a class="whatsapp" href="https://wa.me/31639222600?text=Hi%20ik%20wil%20graag%20een%20website%20laten%20maken."
+    target="_blank" rel="noreferrer" aria-label="Chat via WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path
+        d="M19.11 17.47c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14-.18.27-.71.88-.88 1.06-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.2-1.35-.81-.72-1.36-1.6-1.52-1.87-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.85-2.05-.22-.53-.45-.46-.62-.47l-.53-.01c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.99 2.65 1.12 2.83c.14.18 1.95 2.98 4.73 4.18.66.29 1.18.46 1.58.59.66.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.28.23-.62.23-1.16.16-1.28-.07-.12-.25-.18-.52-.32zM16.02 3C9.39 3 4 8.28 4 14.78c0 2.27.66 4.39 1.8 6.2L4.62 29l8.42-1.98c1.75.94 3.76 1.48 5.98 1.48 6.63 0 12.02-5.28 12.02-11.78C31.04 8.28 25.65 3 19.02 3h-3z" />
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

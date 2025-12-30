@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BarberPro — Knipbeurt & Baard in Rotterdam</title>
+  <meta name="description" content="Premium barber in Rotterdam. Boek online je knipbeurt of baardtrim." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="#">Barber<span>Pro</span></a>
+      <nav class="nav">
+        <a href="#diensten">Diensten</a>
+        <a href="#prijzen">Prijzen</a>
+        <a href="#reviews">Reviews</a>
+        <a class="btn" href="#book">Boek nu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="badge">Rotterdam • Premium barber</p>
+          <h1>Strakke fade. Scherpe baard. <span class="grad">Altijd</span>.</h1>
+          <p class="lead">Boek binnen 30 seconden je afspraak. Geen gedoe. Gewoon kwaliteit.</p>
+
+          <div class="cta">
+            <a class="btn" href="#book">Boek afspraak</a>
+            <a class="btn ghost" href="#diensten">Bekijk diensten</a>
+          </div>
+
+          <div class="highlights">
+            <div class="chip">⏱️ 30 min gemiddeld</div>
+            <div class="chip">⭐ 4.9/5 reviews</div>
+            <div class="chip">📍 Centrum</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Vandaag beschikbaar</h3>
+          <p class="muted">Kies een tijd, klaar.</p>
+          <div class="slots" id="slots"></div>
+          <a class="btn full" href="#book">Verder</a>
+          <p class="mini muted">Demo: tijden zijn voorbeeld.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="diensten">
+      <div class="container">
+        <h2>Diensten</h2>
+        <div class="grid3">
+          <article class="box">
+            <h3>Knipbeurt</h3>
+            <p class="muted">Fade / scissors / styling.</p>
+            <p class="price">€25</p>
+          </article>
+          <article class="box">
+            <h3>Baard</h3>
+            <p class="muted">Trim + lijnen + olie.</p>
+            <p class="price">€18</p>
+          </article>
+          <article class="box">
+            <h3>Combo</h3>
+            <p class="muted">Knipbeurt + baard.</p>
+            <p class="price">€39</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prijzen">
+      <div class="container">
+        <h2>Prijzen</h2>
+        <div class="grid2">
+          <div class="panel">
+            <h3>Populair</h3>
+            <p class="muted">Combo deal met extra service.</p>
+            <ul>
+              <li>Knipbeurt + baard</li>
+              <li>Hot towel</li>
+              <li>Styling</li>
+            </ul>
+            <p class="big">€39</p>
+          </div>
+          <div class="panel">
+            <h3>Los</h3>
+            <p class="muted">Snel en strak.</p>
+            <ul>
+              <li>Knipbeurt — €25</li>
+              <li>Baard — €18</li>
+              <li>Lijnen — €10</li>
+            </ul>
+            <p class="big">vanaf €10</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2>Reviews</h2>
+        <div class="grid3">
+          <div class="quote">“Beste fade die ik in tijden heb gehad.” <span class="muted">— Omar</span></div>
+          <div class="quote">“Super strak gelijnd. Service top.” <span class="muted">— Jay</span></div>
+          <div class="quote">“Snel, schoon, professioneel.” <span class="muted">— Kevin</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="book">
+      <div class="container">
+        <div class="book">
+          <div>
+            <h2>Boek je afspraak</h2>
+            <p class="muted">Vul je gegevens in en we nemen direct contact op.</p>
+            <div class="info">
+              <div class="chip">📍 Rotterdam Centrum</div>
+              <div class="chip">📞 06 12 34 56 78</div>
+              <div class="chip">⏰ 10:00 – 19:00</div>
+            </div>
+          </div>
+
+          <form class="form">
+            <label>Naam<input type="text" placeholder="Jouw naam" required></label>
+            <label>Telefoon<input type="tel" placeholder="06..." required></label>
+            <label>Dienst
+              <select required>
+                <option value="">Kies...</option>
+                <option>Knipbeurt</option>
+                <option>Baard</option>
+                <option>Combo</option>
+              </select>
+            </label>
+            <label>Opmerking<textarea rows="4" placeholder="Bijv. low fade + lijnen"></textarea></label>
+            <button class="btn full" type="button" id="demoSubmit">Aanvraag sturen</button>
+            <p class="muted mini" id="msg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted mini">© <span id="year"></span> BarberPro (demo case)</p>
+        <a class="muted mini" href="../../index.html">Terug naar agency</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

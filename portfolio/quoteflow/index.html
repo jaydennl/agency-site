@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuoteFlow — Offertes maken in 2 minuten</title>
+  <meta name="description" content="Demo webapp: maak offertes, beheer klanten en exporteer PDF (demo)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="#"><span>Quote</span>Flow</a>
+
+      <nav class="nav">
+        <a href="#app">Dashboard</a>
+        <a href="#create">Nieuwe offerte</a>
+        <a class="btn btn--small" href="../../index.html">Terug naar agency</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+        <span class="sr">Menu</span>
+      </button>
+    </div>
+
+    <div class="mobileMenu container" id="mobileMenu">
+      <a href="#app">Dashboard</a>
+      <a href="#create">Nieuwe offerte</a>
+      <a class="btn" href="../../index.html">Terug naar agency</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- LOGIN -->
+    <section class="login" id="loginView">
+      <div class="loginCard">
+        <p class="badge">Demo webapp</p>
+        <h1>Log in op <span class="grad">QuoteFlow</span></h1>
+        <p class="muted">Gebruik demo account om te testen. (Alles is frontend)</p>
+
+        <form class="form" id="loginForm">
+          <label>
+            <span>E-mail</span>
+            <input id="loginEmail" type="email" placeholder="demo@quoteflow.nl" required>
+          </label>
+          <label>
+            <span>Wachtwoord</span>
+            <input id="loginPass" type="password" placeholder="••••••••" required>
+          </label>
+
+          <button class="btn full" type="submit">Inloggen</button>
+          <p class="mini muted" id="loginMsg"></p>
+
+          <div class="demoBox">
+            <p class="mini muted"><strong>Demo login</strong></p>
+            <p class="mini muted">E-mail: <span class="mono">demo@quoteflow.nl</span></p>
+            <p class="mini muted">Wachtwoord: <span class="mono">demo123</span></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- APP -->
+    <section class="app hidden" id="app">
+      <div class="appTop">
+        <div>
+          <h2>Dashboard</h2>
+          <p class="muted">Maak offertes, sla ze op en bekijk je overzicht (demo).</p>
+        </div>
+        <div class="appTop__actions">
+          <button class="btn ghost" id="logoutBtn" type="button">Uitloggen</button>
+        </div>
+      </div>
+
+      <!-- KPI -->
+      <div class="kpis">
+        <div class="kpiCard">
+          <p class="muted mini">Totaal offertes</p>
+          <p class="kpiVal" id="kpiCount">0</p>
+        </div>
+        <div class="kpiCard">
+          <p class="muted mini">Totaal bedrag</p>
+          <p class="kpiVal" id="kpiTotal">€0</p>
+        </div>
+        <div class="kpiCard">
+          <p class="muted mini">Openstaand</p>
+          <p class="kpiVal" id="kpiOpen">0</p>
+        </div>
+        <div class="kpiCard">
+          <p class="muted mini">Betaald</p>
+          <p class="kpiVal" id="kpiPaid">0</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- CREATE -->
+        <section class="panel" id="create">
+          <div class="panelHead">
+            <h3>Nieuwe offerte</h3>
+            <p class="muted mini">Vul klant in + items. Daarna opslaan.</p>
+          </div>
+
+          <form class="form" id="quoteForm">
+            <div class="row">
+              <label>
+                <span>Klantnaam</span>
+                <input id="clientName" type="text" placeholder="Bijv. BarberPro Rotterdam" required>
+              </label>
+              <label>
+                <span>E-mail</span>
+                <input id="clientEmail" type="email" placeholder="klant@email.nl" required>
+              </label>
+            </div>
+
+            <div class="row">
+              <label>
+                <span>Status</span>
+                <select id="status" required>
+                  <option>Open</option>
+                  <option>Betaald</option>
+                </select>
+              </label>
+              <label>
+                <span>BTW</span>
+                <select id="vat">
+                  <option value="21">21%</option>
+                  <option value="9">9%</option>
+                  <option value="0">0%</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="itemsHead">
+              <strong>Items</strong>
+              <button class="btn btn--small ghost" id="addItemBtn" type="button">+ Item</button>
+            </div>
+
+            <div class="items" id="items"></div>
+
+            <div class="totals">
+              <div class="totRow">
+                <span class="muted">Subtotaal</span>
+                <strong id="subTotal">€0</strong>
+              </div>
+              <div class="totRow">
+                <span class="muted">BTW</span>
+                <strong id="vatTotal">€0</strong>
+              </div>
+              <div class="totRow big">
+                <span>Totaal</span>
+                <strong id="grandTotal">€0</strong>
+              </div>
+            </div>
+
+            <div class="row">
+              <button class="btn full" type="submit">Offerte opslaan</button>
+            </div>
+            <p class="mini muted" id="saveMsg"></p>
+          </form>
+        </section>
+
+        <!-- LIST -->
+        <section class="panel">
+          <div class="panelHead">
+            <h3>Offertes</h3>
+            <p class="muted mini">Klik op een offerte om details te zien.</p>
+          </div>
+
+          <div class="list" id="quoteList"></div>
+
+          <div class="listActions">
+            <button class="btn ghost full" id="clearBtn" type="button">Alles wissen</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- DETAILS -->
+      <section class="panel details">
+        <div class="panelHead">
+          <h3>Details</h3>
+          <p class="muted mini">Preview van de geselecteerde offerte.</p>
+        </div>
+
+        <div class="detailBox" id="detailBox">
+          <p class="muted">Selecteer een offerte uit de lijst.</p>
+        </div>
+
+        <div class="detailActions">
+          <button class="btn full" id="exportBtn" type="button">Export (demo)</button>
+        </div>
+
+        <p class="mini muted">* Dit is een demo. Later kun je hier PDF export toevoegen.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

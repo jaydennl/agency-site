@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitFocus Coaching — Word fitter in 8 weken</title>
+  <meta name="description" content="Online coaching voor vetverlies en spieropbouw. Duidelijk plan, wekelijkse check-ins en snelle resultaten." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="#">Fit<span>Focus</span></a>
+
+      <nav class="nav">
+        <a href="#resultaat">Resultaat</a>
+        <a href="#programma">Programma</a>
+        <a href="#prijzen">Prijzen</a>
+        <a class="btn btn--small" href="#apply">Gratis intake</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+        <span class="sr">Menu</span>
+      </button>
+    </div>
+
+    <div class="mobileMenu container" id="menu">
+      <a href="#resultaat">Resultaat</a>
+      <a href="#programma">Programma</a>
+      <a href="#prijzen">Prijzen</a>
+      <a class="btn" href="#apply">Gratis intake</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="badge">Online coaching • Vetverlies • Spieropbouw</p>
+          <h1>Word fitter in <span class="grad">8 weken</span> met een plan dat je wél volhoudt.</h1>
+          <p class="lead">
+            Persoonlijk schema, voeding die bij jou past en wekelijkse check-ins.
+            Jij focust op actie, ik regel de structuur.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#apply">Start gratis intake</a>
+            <a class="btn ghost" href="#programma">Hoe werkt het?</a>
+          </div>
+
+          <div class="proof">
+            <div class="proof__item">
+              <strong>⭐ 4.9/5</strong>
+              <span>Gemiddelde review</span>
+            </div>
+            <div class="proof__item">
+              <strong>✅ 250+</strong>
+              <span>Intakes gedaan</span>
+            </div>
+            <div class="proof__item">
+              <strong>📱 App</strong>
+              <span>Check-ins & schema</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Gratis intake aanvragen</h3>
+          <p class="muted">Binnen 24 uur reactie (demo).</p>
+
+          <form class="form" id="leadForm">
+            <label>
+              <span>Naam</span>
+              <input name="name" type="text" placeholder="Jouw naam" required>
+            </label>
+
+            <label>
+              <span>E-mail</span>
+              <input name="email" type="email" placeholder="jij@email.nl" required>
+            </label>
+
+            <label>
+              <span>Doel</span>
+              <select name="goal" required>
+                <option value="">Kies...</option>
+                <option>Afvallen</option>
+                <option>Spier opbouwen</option>
+                <option>Conditie</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Startdatum</span>
+              <input name="start" type="date" required>
+            </label>
+
+            <button class="btn full" type="submit">Aanvraag versturen</button>
+            <p class="mini muted" id="formMsg"></p>
+          </form>
+
+          <div class="miniBox">
+            <p class="mini muted">Wat je krijgt:</p>
+            <ul class="miniList">
+              <li>Persoonlijk trainingsschema</li>
+              <li>Voedingsrichtlijnen</li>
+              <li>Wekelijkse check-in</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resultaat">
+      <div class="container">
+        <div class="head">
+          <h2>Resultaat dat je kunt meten</h2>
+          <p class="muted">Demo-cijfers — vervang later met echte cases.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="box">
+            <p class="kpi">-5.2kg</p>
+            <p class="muted">Gemiddeld vetverlies in 8 weken</p>
+          </div>
+          <div class="box">
+            <p class="kpi">+18%</p>
+            <p class="muted">Meer kracht op basisoefeningen</p>
+          </div>
+          <div class="box">
+            <p class="kpi">90%</p>
+            <p class="muted">Houdt schema langer vol</p>
+          </div>
+        </div>
+
+        <div class="beforeAfter">
+          <div class="photo ph1">
+            <div class="stamp">Voor</div>
+          </div>
+          <div class="photo ph2">
+            <div class="stamp">Na</div>
+          </div>
+        </div>
+
+        <p class="mini muted">Tip: later kun je hier echte foto’s of screenshots van progressies zetten.</p>
+      </div>
+    </section>
+
+    <section class="section" id="programma">
+      <div class="container">
+        <div class="head">
+          <h2>Hoe het werkt</h2>
+          <p class="muted">Simpel proces, duidelijke stappen.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="nr">1</span>
+            <div>
+              <h3>Intake</h3>
+              <p class="muted">Doel, niveau, planning. We maken het realistisch.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="nr">2</span>
+            <div>
+              <h3>Plan op maat</h3>
+              <p class="muted">Trainingsschema + voeding die bij jou past.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="nr">3</span>
+            <div>
+              <h3>Check-ins</h3>
+              <p class="muted">Wekelijks bijsturen. Zo blijf je consistent.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="nr">4</span>
+            <div>
+              <h3>Resultaat</h3>
+              <p class="muted">Meetbaar: gewicht, kracht, energie, foto’s.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="features grid3">
+          <div class="box">
+            <h3>Schema</h3>
+            <p class="muted">Thuis of gym. 3–5 dagen per week.</p>
+          </div>
+          <div class="box">
+            <h3>Voeding</h3>
+            <p class="muted">Flexibel, geen crash dieet.</p>
+          </div>
+          <div class="box">
+            <h3>Support</h3>
+            <p class="muted">Snel contact via chat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prijzen">
+      <div class="container">
+        <div class="head">
+          <h2>Prijzen</h2>
+          <p class="muted">Duidelijke pakketten. (Demo)</p>
+        </div>
+
+        <div class="pricing">
+          <article class="priceCard">
+            <h3>Starter</h3>
+            <p class="price">€49 <span class="muted">/wk</span></p>
+            <ul class="list">
+              <li>Schema (3 dagen)</li>
+              <li>1 check-in / week</li>
+              <li>Basis voeding</li>
+            </ul>
+            <a class="btn ghost full" href="#apply">Kies Starter</a>
+          </article>
+
+          <article class="priceCard featured">
+            <div class="ribbon">Meest gekozen</div>
+            <h3>Pro</h3>
+            <p class="price">€69 <span class="muted">/wk</span></p>
+            <ul class="list">
+              <li>Schema (4–5 dagen)</li>
+              <li>2 check-ins / week</li>
+              <li>Flex voeding</li>
+            </ul>
+            <a class="btn full" href="#apply">Kies Pro</a>
+          </article>
+
+          <article class="priceCard">
+            <h3>Elite</h3>
+            <p class="price">€89 <span class="muted">/wk</span></p>
+            <ul class="list">
+              <li>Alles van Pro</li>
+              <li>Extra call / week</li>
+              <li>Meal planning</li>
+            </ul>
+            <a class="btn ghost full" href="#apply">Kies Elite</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apply">
+      <div class="container">
+        <div class="apply">
+          <div>
+            <h2>Start met een gratis intake</h2>
+            <p class="muted">Geen verplichting. Gewoon kijken of het matcht.</p>
+            <div class="chips">
+              <span class="chip">✅ Plan op maat</span>
+              <span class="chip">✅ Wekelijkse check-ins</span>
+              <span class="chip">✅ Duidelijke doelen</span>
+            </div>
+          </div>
+
+          <div class="applyCard">
+            <h3>Contact</h3>
+            <p class="muted mini">Demo gegevens — vervang later.</p>
+            <div class="line"></div>
+            <p><strong>WhatsApp</strong><br><span class="muted">+31 6 12 34 56 78</span></p>
+            <p><strong>E-mail</strong><br><span class="muted">coach@fitfocus.nl</span></p>
+            <a class="btn full" href="../../index.html">Terug naar agency</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted mini">© <span id="year"></span> FitFocus (demo case)</p>
+        <a class="muted mini" href="../../index.html">Terug naar agency</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

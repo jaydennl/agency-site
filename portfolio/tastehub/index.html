@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TasteHub — Modern restaurant in Rotterdam</title>
+  <meta name="description" content="Bekijk ons menu en reserveer direct. Verse gerechten, snelle service en gezellige sfeer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top__inner">
+      <a class="brand" href="#">Taste<span>Hub</span></a>
+
+      <nav class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#info">Info</a>
+        <a href="#reserve">Reserveren</a>
+        <a class="btn btn--small" href="#reserve">Reserveer</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+        <span class="sr">Menu</span>
+      </button>
+    </div>
+
+    <div class="mobileMenu container" id="mobileMenu">
+      <a href="#menu">Menu</a>
+      <a href="#info">Info</a>
+      <a class="btn" href="#reserve">Reserveer</a>
+      <a class="muted mini" href="../../index.html">Terug naar agency</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="badge">Rotterdam • Diner • Lunch</p>
+          <h1>Goed eten. <span class="grad">Relaxte</span> sfeer.</h1>
+          <p class="lead">Bekijk het menu en reserveer binnen 1 minuut (demo).</p>
+
+          <div class="cta">
+            <a class="btn" href="#reserve">Reserveer tafel</a>
+            <a class="btn ghost" href="#menu">Bekijk menu</a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">⭐ 4.7/5</span>
+            <span class="chip">⏰ 12:00–22:00</span>
+            <span class="chip">📍 Centrum</span>
+          </div>
+        </div>
+
+        <div class="heroCard">
+          <div class="heroPhoto">
+            <div class="stamp">Chef’s Special</div>
+          </div>
+          <div class="heroCard__bottom">
+            <p class="muted mini">Populair vandaag</p>
+            <div class="special">
+              <strong>Truffle Pasta</strong>
+              <span class="muted">€16</span>
+            </div>
+            <a class="btn full" href="#reserve">Reserveer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="head">
+          <h2>Menu</h2>
+          <p class="muted">Demo menu — vervang later met je echte gerechten.</p>
+        </div>
+
+        <div class="tabs">
+          <button class="tab is-active" data-cat="all" type="button">Alles</button>
+          <button class="tab" data-cat="starters" type="button">Starters</button>
+          <button class="tab" data-cat="mains" type="button">Main</button>
+          <button class="tab" data-cat="desserts" type="button">Dessert</button>
+          <button class="tab" data-cat="drinks" type="button">Drinks</button>
+        </div>
+
+        <div class="grid2" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="info">
+      <div class="container">
+        <div class="infoGrid">
+          <div class="box">
+            <h3>Locatie</h3>
+            <p class="muted">Coolsingel 123, Rotterdam</p>
+            <div class="miniMap">Map (demo)</div>
+          </div>
+          <div class="box">
+            <h3>Openingstijden</h3>
+            <ul class="list">
+              <li>Ma–Do: 12:00–22:00</li>
+              <li>Vr–Za: 12:00–23:00</li>
+              <li>Zo: 12:00–21:00</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Contact</h3>
+            <p class="muted"><strong>Telefoon</strong><br>010 123 45 67</p>
+            <p class="muted"><strong>E-mail</strong><br>hello@tastehub.nl</p>
+            <a class="btn ghost" href="../../index.html">Terug naar agency</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reserve">
+      <div class="container">
+        <div class="reserve">
+          <div>
+            <h2>Reserveren</h2>
+            <p class="muted">Vul in en we bevestigen per mail (demo).</p>
+            <div class="chips">
+              <span class="chip">✅ Snel</span>
+              <span class="chip">✅ Duidelijk</span>
+              <span class="chip">✅ Geen account</span>
+            </div>
+          </div>
+
+          <form class="form" id="reserveForm">
+            <div class="row">
+              <label><span>Naam</span><input required type="text" placeholder="Jouw naam"></label>
+              <label><span>E-mail</span><input required type="email" placeholder="jij@email.nl"></label>
+            </div>
+            <div class="row">
+              <label><span>Datum</span><input required type="date"></label>
+              <label><span>Tijd</span><input required type="time" value="19:00"></label>
+            </div>
+            <label><span>Aantal personen</span>
+              <select required>
+                <option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+              </select>
+            </label>
+            <label><span>Opmerking</span><textarea rows="4" placeholder="Allergieën of extra wensen?"></textarea></label>
+
+            <button class="btn full" type="submit">Reserveer (demo)</button>
+            <p class="muted mini" id="reserveMsg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted mini">© <span id="year"></span> TasteHub (demo case)</p>
+        <a class="muted mini" href="../../index.html">Terug naar agency</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
